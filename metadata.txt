@@ -1,0 +1,16 @@
+[general]
+name=GeoServer Publisher SSO
+qgisMinimumVersion=3.16
+description=Publish QGIS layers to GeoServer with username/password, a QGIS auth config, or a Microsoft/Azure SSO session captured from a browser sign-in. Very detailed logging.
+version=0.2.4
+author=Ayite Brown
+email=ayiteb1@gmail.com
+about=SSO edition of GeoServer Publisher; installs side by side with it. Publishes vector layers to GeoServer using plain HTTP requests to workspace-scoped endpoints only, so a workspace-level user works. "Sign in with Microsoft" opens Microsoft Edge (or Chrome) at your GeoServer, you sign in as usual, and the plugin reuses that session's cookies (kept in memory only). A redirect to a sign-in page is reported as a failure, never as success, and every REST publish is verified on the server. Includes a WFS-T append mode that needs no REST access. Every request/response is logged in detail with secrets redacted.
+tracker=https://github.com/Ayiteb2/geoserver-publisher-sso/issues
+repository=https://github.com/Ayiteb2/geoserver-publisher-sso
+tags=geoserver,publish,rest,wfs-t,ogc,sso,azure,openid
+homepage=https://github.com/Ayiteb2/geoserver-publisher-sso
+category=Web
+icon=icon.svg
+experimental=True
+deprecated=False
